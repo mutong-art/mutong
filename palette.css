@@ -1,0 +1,17 @@
+/* Colour study: the supplied texture, softened beneath the existing layout. */
+:root{background:#f7f3e9;color:#35262e}
+body{position:relative;isolation:isolate;background:transparent;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(250,247,239,.75),rgba(250,247,239,.75)),url('images/palette-texture.jpg');background-position:center;background-repeat:no-repeat;background-size:100% 100%}
+.mobile-header,.sidebar,main{background:transparent}
+a:hover,button:hover{color:#702c43}
+a:focus-visible,button:focus-visible,.full-synopsis summary:focus-visible{outline-color:#702c43}
+::selection{background:#753c54;color:#fff9ed}
+.nav-group>a[aria-current=page],.information>a[aria-current=page]{color:#702c43}
+.identity>.location,.language button,.language>span,.film-tile figcaption,.film-tile figcaption .tile-role,.film-meta,.film-country,.film-status,.commission,.credit h3,.cv-entry .year,.cv-entry .cv-role,.contact-page dt,.copy-label,.mobile-header a span,.director-portrait figcaption,.watch-page .qr-caption,.full-synopsis summary{color:#544650}
+.language button[aria-pressed=true]{color:#35262e}
+.watch-link,.watch-series{color:#702c43}
+.lightbox{background:#f7f3e9;color:#35262e}
+.lightbox::backdrop{background:rgba(244,240,232,.96)}
+.lightbox p{color:#544650}
+.toast{background:#49323e;color:#fff9ed}
+.skip{background:#f7f3e9;color:#35262e}
